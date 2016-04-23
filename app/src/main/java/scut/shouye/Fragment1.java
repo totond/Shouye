@@ -52,7 +52,7 @@ public class Fragment1 extends Fragment implements MyItemClickListener {
 
 		myAdapter = new MyAdapter(getActivity().getApplicationContext(),listItem);
 		myAdapter.setOnItemClickListener(this);
-		Rv.addItemDecoration(new DividerItemDecoration(getActivity().getApplicationContext(), layoutManager.getOrientation()));
+//		Rv.addItemDecoration(new DividerItemDecoration(getActivity().getApplicationContext(), layoutManager.getOrientation()));
 		Rv.setLayoutManager(layoutManager);
 		Rv.setHasFixedSize(true);
 		Rv.setAdapter(myAdapter);

@@ -33,9 +33,9 @@ public class MyAdapter extends RecyclerView.Adapter {
 
         public Viewholder(View root) {
             super(root);
-            Title = (TextView) root.findViewById(R.id.Itemtitle);
-            Text = (TextView) root.findViewById(R.id.Itemtext);
-            ima = (ImageView) root.findViewById(R.id.ItemImage);
+            Title = (TextView) root.findViewById(R.id.Item_name);
+            Text = (TextView) root.findViewById(R.id.Item_address);
+            ima = (ImageView) root.findViewById(R.id.Item_picture);
             root.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -71,8 +71,8 @@ public class MyAdapter extends RecyclerView.Adapter {
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
             Viewholder vh = (Viewholder) holder;
-            vh.Title.setText((String) listItem.get(position).get("ItemTitle"));
-            vh.Text.setText((String) listItem.get(position).get("ItemText"));
+//            vh.Title.setText((String) listItem.get(position).get("ItemTitle"));
+//            vh.Text.setText((String) listItem.get(position).get("ItemText"));
             vh.ima.setImageResource((Integer) listItem.get(position).get("ItemImage"));
         }
 

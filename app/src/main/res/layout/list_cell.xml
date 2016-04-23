@@ -1,26 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="96dp">
+
     <ImageView
         android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ItemImage"/>
+        android:layout_width="115dp"
+        android:layout_height="86dp"
+        android:id="@+id/Item_picture"
+        android:layout_marginRight="14dp"
+        android:layout_centerVertical="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/Itemtitle" />
+        android:text="物品名称"
+        android:id="@+id/Item_name"
+        android:layout_marginTop="8dp"
+        android:textSize="17sp"
+        android:layout_marginLeft="14dp"
+        android:textColor="#333333"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/Itemtext"
-        android:layout_below="@+id/Itemtitle"/>
+        android:text="广东广州"
+        android:id="@+id/Item_address"
+        android:layout_below="@+id/Item_name"
+        android:layout_alignLeft="@+id/Item_name"
+        android:layout_alignStart="@+id/Item_name"
+        android:textSize="12sp"
+        android:textColor="#999999"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最低批发量："
+        android:id="@+id/Item_lowerest_wholesale"
+        android:layout_below="@+id/Item_name"
+        android:layout_toRightOf="@+id/Item_address"
+        android:layout_toEndOf="@+id/Item_address"
+        android:paddingLeft="3dp"
+        android:paddingStart="3dp"
+        android:textSize="12sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1001"
+        android:id="@+id/Item_lowerest_wholesale_number"
+        android:layout_below="@+id/Item_name"
+        android:layout_toRightOf="@+id/Item_lowerest_wholesale"
+        android:layout_toEndOf="@+id/Item_lowerest_wholesale"
+        android:textSize="12sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥111111"
+        android:id="@+id/Item_price"
+        android:layout_alignLeft="@+id/Item_name"
+        android:layout_alignStart="@+id/Item_name"
+        android:textSize="17sp"
+        android:textColor="#ff4957"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+
 </RelativeLayout>
-</LinearLayout>
