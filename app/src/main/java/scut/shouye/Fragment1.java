@@ -42,7 +42,7 @@ public class Fragment1 extends Fragment implements MyItemClickListener {
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("ItemTitle", "第" + i + "行");
 			map.put("ItemText", "这是第" + i + "行");
-			map.put("ItemImage",R.mipmap.ic_launcher);
+			map.put("ItemImage",R.drawable.objects);
 			listItem.add(map);
 		}
 	}
@@ -52,7 +52,6 @@ public class Fragment1 extends Fragment implements MyItemClickListener {
 
 		myAdapter = new MyAdapter(getActivity().getApplicationContext(),listItem);
 		myAdapter.setOnItemClickListener(this);
-//		Rv.addItemDecoration(new DividerItemDecoration(getActivity().getApplicationContext(), layoutManager.getOrientation()));
 		Rv.setLayoutManager(layoutManager);
 		Rv.setHasFixedSize(true);
 		Rv.setAdapter(myAdapter);
